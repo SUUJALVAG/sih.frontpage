@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    text-align: center;
+    /* background-color: rgb(146 ,168 , 209); */
+    background-color: #92a8d1;
+}
+header{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.bus-scheduler{
+    display: flex;
+}
+h2{
+    margin-left: 10px;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25vw;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+i{
+    font-size: 22px;
+    margin-top: 2.5px;
+    margin-left: 15px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    gap: 10px;
+}
+#text1{
+    font-size: 35px;
+}
+p{
+    font-size: 23px;
+}
+select{
+    height: 35px;
+    width: 140px;
+}
+.route{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 3vmin;
+}
+
+#from1 , #to1 {
+    font-weight: bolder;
+}
+select{
+    border: 1px solid black;
+    border-radius: 0.30rem;
+    object-fit: cover;
+}
+button{
+    width: 4.5rem;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 0.30rem;
+}
