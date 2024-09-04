@@ -12,69 +12,72 @@
 </head>
 
 <body>
-    <header>
-        <a href="#" class="bus-scheduler">
-            <i class="fa-solid fa-bus"></i>
-            <h2>Bus Scheduler</h2>
-        </a>
-        <div class="links">
-            <a href="#">Home</a>
-            <a href="#">Schedule</a>
-            <a href="#">Routes</a>
-            <a href="#">Contacts Us</a>
-            <a href="#">Login</a>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <a href="#" class="bus-scheduler">
+                <i class="fa-solid fa-bus"></i>
+                <h2>YATRI</h2>
+            </a>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Schedule</a>
+                <a href="#">Routes</a>
+                <a href="#">Contacts Us</a>
+                <a href="#">Login</a>
+            </div>
+        </header>
 
-    <main>
-        <div class="text">
-            <h1 id="text1">Plan Your Bus Journey</h1>
-            <p>Find the best route and schedule for your bus trip.</p>
-        </div>
-
-        <div class="route">
-            <div class="from">
-                <div id="from1">From</div>
-                <select>
-                    <option value="">Select Your Source</option>
-                    <option value="ANAND VIHAR">ANAND VIHAR</option>
-                    <option value="AZADPUR">AZADPUR</option>
-                    <option value="BADARPUR BORDER">BADARPUR BORDER</option>
-                    <option value="BAWANA">BAWANA</option>
-                    <option value="HAUZ KHAS">HAUZ KHAS</option>
-                    <option value="KALYANPURI">KALYANPURI</option>
-                    <option value="NAJAFGARH">NAJAFGARH</option>
-                    <option value="NEHRUPLACE TERMINAL">NEHRUPLACE TERMINAL</option>
-                    <option value="SHIVAJI STADIUM">SHIVAJI STADIUM</option>
-                    <option value="UTTAMNAGAR">UTTAMNAGAR</option>
-                    <option value="AZADPUR">AZADPUR</option>
-                </select>
+        <main>
+            <div class="text">
+                <h1 id="text1">Plan Your Bus Journey</h1>
+                <p class="text2">Find the best route and schedule for your bus trip.</p>
             </div>
 
-            <div class="to">
-                <div id="to1">To</div>
-                <select>
-                    <option value="">Select Your Destination</option>
-                    <option value="ANAND VIHAR">ANAND VIHAR</option>
-                    <option value="AZADPUR">AZADPUR</option>
-                    <option value="BADARPUR BORDER">BADARPUR BORDER</option>
-                    <option value="BAWANA">BAWANA</option>
-                    <option value="HAUZ KHAS">HAUZ KHAS</option>
-                    <option value="KALYANPURI">KALYANPURI</option>
-                    <option value="NAJAFGARH">NAJAFGARH</option>
-                    <option value="NEHRUPLACE TERMINAL">NEHRUPLACE TERMINAL</option>
-                    <option value="SHIVAJI STADIUM">SHIVAJI STADIUM</option>
-                    <option value="UTTAMNAGAR">UTTAMNAGAR</option>
-                    <option value="AZADPUR">AZADPUR</option>
-                </select>
-            </div>
-            
-            <div class="search">
-                <button>search</button>
-            </div>
-        </div>
-    </main>
+            <div class="route">
+                <div class="from">
+                    <form method="post" action="upload.php">
+                    <select name="options" class="drop">
+                       
+                        <option value="">Select Your Route</option>
+                        <option value="ANAND VIHAR">ANAND VIHAR ISBT</option>
+                        <option value="BADARPUR BORDER">BADARPUR BORDER</option>
+                        <option value="BAWANA">BAWANA</option>
+                        <option value="HAUZ KHAS">HAUZ KHAS</option>
+                        <option value="KALYANPURI">KALYANPURI</option>
+                        <option value="NAJAFGARH">NAJAFGARH</option>
+                        <option value="NEHRUPLACE TERMINAL">NEHRU PLACE TERMINAL</option>
+                        <option value="SHIVAJI STADIUM">SHIVAJI STADIUM</option>
+                        <option value="UTTAMNAGAR">UTTAMNAGAR T</option>
+                        <option value="AZADPUR">AZADPUR</option>
+                    </select>
+                </div>
 
+               <BUTTON id="icon"> <i class="fa-solid fa-arrow-right-arrow-left"></i></BUTTON>
+
+                <div class="TO">
+                    <select name="options2" class="drop">
+                        <option value="">Select Your Route</option>
+                        <option value="ANAND VIHAR">ANAND VIHAR ISBT</option>
+                        <option value="BADARPUR BORDER">BADARPUR BORDER</option>
+                        <option value="BAWANA">BAWANA</option>
+                        <option value="HAUZ KHAS">HAUZ KHAS</option>
+                        <option value="KALYANPURI">KALYANPURI</option>
+                        <option value="NAJAFGARH">NAJAFGARH</option>
+                        <option value="NEHRUPLACE TERMINAL">NEHRU PLACE TERMINAL</option>
+                        <option value="SHIVAJI STADIUM">SHIVAJI STADIUM</option>
+                        <option value="UTTAMNAGAR">UTTAMNAGAR T</option>
+                        <option value="AZADPUR">AZADPUR</option>
+                    </select>
+               
+                </div>
+
+                <div class="submit1">
+                     <input type="submit" value="Submit" class="submit">
+                </div>
+            </form>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
