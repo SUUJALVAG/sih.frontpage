@@ -1,48 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0%;
 }
-body{
+
+body {
     text-align: center;
     /* background-color: rgb(146 ,168 , 209); */
     /* background-color: #92a8d1; */
     background-image: url(./20240903_143444.jpg);
     background-position: center;
 }
-header{
+
+header {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
-.bus-scheduler{
+
+.bus-scheduler {
     display: flex;
 }
-h2{
+
+h2 {
     margin-left: 10px;
 }
-.links{
+
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
     width: 25vw;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
-a:hover{
+
+a:hover {
     transform: scale(1.4);
     transition: all;
     animation: ease-in-out;
     transition-duration: 0.7s;
 }
-i{
+
+i {
     font-size: 22px;
     margin-top: 2.5px;
     margin-left: 15px;
 }
-.text{
+
+.text {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -50,15 +59,17 @@ i{
     margin-top: 10%;
     gap: 10px;
 }
-#text1{
+
+#text1 {
     font-size: 35px;
     font-family: sans-;
 }
-p{
+
+p {
     font-size: 23px;
 }
 
-.route{
+.route {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,42 +77,59 @@ p{
     gap: 3vmin;
 }
 
-#from1 , #to1 {
+#from1,
+#to1 {
     font-weight: bolder;
 }
-select{
+
+select {
     border: 1px solid black;
     border-radius: 0.30rem;
     object-fit: cover;
 }
-.submit{
+.submit1{
+    display: inline ;
+}
+#submit {
+    height: 1.5rem;
     width: 4.5rem;
+    font-size: 1.3rem;
     margin-top: 20px;
-    font-size: 18px;
-    border-radius: 0.30rem;
+    border-radius: 0.25rem;
     background-color: silver;
     padding: 0.25rem;
 }
-.submit:hover{
+
+#submit:hover {
     transform: scale(1.5);
     animation: ease-in-out;
     transition: all;
     transition-duration: 0.7s;
 }
-.drop{
+
+.drop1 {
     height: 50px;
     width: 500px;
     font-size: 1.2rem;
 }
-.text2{
-    font-family:cursive;
+
+.drop2 {
+    height: 50px;
+    width: 500px;
+    font-size: 1.2rem;
 }
-.route{
+
+.text2 {
+    font-family: cursive;
+}
+
+.route {
     display: flex;
     flex-direction: column;
 
 }
-#icon{
+
+#icon {
     background-color: transparent;
     border: none;
 }
