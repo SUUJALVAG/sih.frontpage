@@ -5,7 +5,9 @@
 body{
     text-align: center;
     /* background-color: rgb(146 ,168 , 209); */
-    background-color: #92a8d1;
+    /* background-color: #92a8d1; */
+    background-image: url(./20240903_143444.jpg);
+    background-position: center;
 }
 header{
     margin-top: 15px;
@@ -29,6 +31,12 @@ a{
     text-decoration: none;
     color: #000;
 }
+a:hover{
+    transform: scale(1.4);
+    transition: all;
+    animation: ease-in-out;
+    transition-duration: 0.7s;
+}
 i{
     font-size: 22px;
     margin-top: 2.5px;
@@ -44,14 +52,12 @@ i{
 }
 #text1{
     font-size: 35px;
+    font-family: sans-;
 }
 p{
     font-size: 23px;
 }
-select{
-    height: 35px;
-    width: 140px;
-}
+
 .route{
     display: flex;
     justify-content: center;
@@ -68,9 +74,34 @@ select{
     border-radius: 0.30rem;
     object-fit: cover;
 }
-button{
+.submit{
     width: 4.5rem;
     margin-top: 20px;
     font-size: 18px;
     border-radius: 0.30rem;
+    background-color: silver;
+    padding: 0.25rem;
+}
+.submit:hover{
+    transform: scale(1.5);
+    animation: ease-in-out;
+    transition: all;
+    transition-duration: 0.7s;
+}
+.drop{
+    height: 50px;
+    width: 500px;
+    font-size: 1.2rem;
+}
+.text2{
+    font-family:cursive;
+}
+.route{
+    display: flex;
+    flex-direction: column;
+
+}
+#icon{
+    background-color: transparent;
+    border: none;
 }
