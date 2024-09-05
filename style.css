@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    text-align: center;
+    /* background-color: rgb(146 ,168 , 209); */
+    /* background-color: #92a8d1; */
+    background-image: url(./20240903_143444.jpg);
+    background-position: center;
+}
+
+header {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bus-scheduler {
+    display: flex;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25vw;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    transform: scale(1.4);
+    transition: all;
+    animation: ease-in-out;
+    transition-duration: 0.7s;
+}
+
+i {
+    font-size: 22px;
+    margin-top: 2.5px;
+    margin-left: 15px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    gap: 10px;
+}
+
+#text1 {
+    font-size: 35px;
+    font-family: sans-;
+}
+
+p {
+    font-size: 23px;
+}
+
+.route {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 3vmin;
+}
+
+#from1,
+#to1 {
+    font-weight: bolder;
+}
+
+select {
+    border: 1px solid black;
+    border-radius: 0.30rem;
+    object-fit: cover;
+}
+.submit1{
+    display: inline ;
+}
+#submit {
+    height: 1.5rem;
+    width: 4.5rem;
+    font-size: 1.3rem;
+    color: #0eb9cb;
+    margin-top: 20px;
+    border: 2px solid silver;
+    border-radius: 0.25rem;
+    background-color: rgb(68, 68, 118);
+    padding: 0.25rem;
+}
+
+.submit1:hover {
+    transform: scale(1.5);
+    animation: ease-in-out;
+    transition: all;
+    transition-duration: 0.7s;
+}
+
+.drop1 {
+    height: 50px;
+    width: 500px;
+    font-size: 1.2rem;
+}
+
+.drop2 {
+    height: 50px;
+    width: 500px;
+    font-size: 1.2rem;
+}
+
+.text2 {
+    font-family: cursive;
+}
+
+.route {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#icon {
+    background-color: transparent;
+    border: none;
+}
