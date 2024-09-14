@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaflet Map with Multiple GeoJSON Files</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="map.css">
+</head>
+
+<body>
+  <div class="details">
+    <div class="driverdet set">
+      <h2 id="D1line">Crew Details</h2>
+      <div class="drivername">
+        <h3 id="D2line">John Doe</h3>
+          <p id="D3line">Driver</p>
+      </div>
+      
+      <div class="lastlineinD">
+        <h3 id="D4line">License Information</h3>
+        <p id="D5line">License No: 12345678</p>
+        <p id="D6line">Expires: 2025-12-31</p>
+      </div>
+      <div id="D7line">
+        <h3>Working Hours</h3>
+        <p>8 Hours/Day</p>
+      </div>
+      <div id="D8line">
+        <h3>Rest Hours</h3>
+        <p>2 Hours/Shift</p>
+      </div>
+    </div>  
+
+    <div id="map" style="width: 85%; height: 100vh"></div>
+
+    <div class="busdet set">
+      <h2 id="B1line">Bus Details</h2>
+      <div class="vehnum">
+        <h3 id="B2line">Vehicle Number</h3>
+        <p id="B3line">AB 1234</p>
+      </div>
+      <div class="capacity">
+        <h3 id="B4line">Capacity</h3>
+        <p id="B5line">40 passengers</p>
+      </div>
+      <div class="route">
+        <h3 id="B6line">Route</h3>
+        <p id="B7line">ANAND VIHAR ISBT to</p>
+        <p> BADARPUR BORDER</p>
+      </div>
+      <div class="schedule">
+        <h3 id="B8line">Schedule</h3>
+        <p id="B9line">Monday - Friday</p>
+        <p> 7:00 AM - 7:00 PM</p>
+      </div>
+
+      <div class="distance">
+        <h3 id="B10line">DISTANCE</h3>
+        <P>32KM</P>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <script>
+    // Initialize the map
+    var map = L.map("map").setView([28.7041, 77.1025], 12); // Example: Delhi
+
+    // Add OpenStreetMap tile layer
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "&copy; OpenStreetMap contributors",
+    }).addTo(map);
+
+    // Function to load a GeoJSON file and handle potential errors
+    function loadGeoJSON(url, layerName) {
+      fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Error loading ${url}: ${response.statusText}`);
+          }
+          return response.json();
+        })
+        .then((data) => {
+          // Add the GeoJSON layer to the map
+          L.geoJSON(data).addTo(map);
+          console.log(`${layerName} added successfully.`);
+        })
+        .catch((error) => {
+          console.error(`Error loading GeoJSON ${layerName}:`, error);
+        });
+    }
+
+    // Load multiple GeoJSON files
+    //   loadGeoJSON(
+    //     "./GeoJSON Files/306-Kalyanpuri-NehruPlaceT.geojson",
+    //     "Layer 1"
+    //   );
+    loadGeoJSON(
+      "./GeoJSON Files/473-AnandViharISBT-BadarpurBorder.geojson",
+      "Layer 1"
+    );
+    //   loadGeoJSON("./GeoJSON Files/978-NajafGarh-Azadpur.geojson", "Layer 1");
+    //   loadGeoJSON(
+    //     "./GeoJSON Files/620-HauzKhas-ShivajiStadium.geojson",
+    //     "Layer 1"
+    //   );
+    //   loadGeoJSON("./GeoJSON Files/972-Bawana-UttamnagarT.geojson", "Layer 1");
+    loadGeoJSON("./GeoJSON Files/ANAND VIHAR ISBT.geojson", "Layer 1");
+    //   loadGeoJSON("./GeoJSON Files/AZADPUR.geojson", "Layer 1");
+    loadGeoJSON("./GeoJSON Files/BADARPUR BORDER.geojson", "Layer 1");
+    //   loadGeoJSON("./GeoJSON Files/BAWANA.geojson", "Layer 1");
+    //   loadGeoJSON("./GeoJSON Files/HAUZ KHAS.geojson", "Layer 1");
+    //   loadGeoJSON("./GeoJSON Files/KALYANPURI.geojson", "Layer 1");
+    //   loadGeoJSON("./GeoJSON Files/NAJAFGARH.geojson", "Layer 1");
+    //   loadGeoJSON("./GeoJSON Files/NEHRU PLACE TERMINAL.geojson", "Layer 1");
+    //   loadGeoJSON("./GeoJSON Files/SHIVAJISTADIUM.geojson", "Layer 1");
+    //   loadGeoJSON("./GeoJSON Files/UTTAMNAGAR T copy.geojson", "Layer 1");
+
+    // Replace with your file paths
+  </script>
+</body>
+
+</html>
+
+<!-- "./GeoJSON Files/306-Kalyanpuri-NehruPlaceT.geojson" -->

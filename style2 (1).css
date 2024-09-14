@@ -1,0 +1,50 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* body{
+    align-items: center; 
+
+} */
+.details{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.vehnum , .capacity , .route , .schedule{
+    margin-top: 20px;
+}
+h2{
+    margin-bottom: 5px;
+}
+#B1line{
+    margin-top: 10px;
+}
+.busdet{
+    border: 2px solid black;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    width: 20vw;
+    padding-left: 10px;
+}
+.driverdet{
+    border: 2px solid black;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    width: 20vw;
+    padding-left: 10px;
+}
+.drivername{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#D1line{
+    margin-top: 10px;
+}
+#D4line{
+    margin-bottom: 10px;
+}
